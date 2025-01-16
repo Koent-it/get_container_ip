@@ -7,7 +7,6 @@ setup(
   install_requires=[
     'argparse',
     'logging',
-    'json',
   ],
   author='Koent S.r.l.',
   author_email='tools@koent.it',
