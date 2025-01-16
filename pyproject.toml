@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "get_container_ip"
+version = "0.1.0"
+description = "A project to get the IP address of a container"
+authors = ["Koent S.r.l. <tools@koent.it>"]
+license = "MIT"
+
+[project.scripts]
+get_container_ip = "get_container_ip.cli:app"
+
+[project.entry-points."pipx.run"]
+get_container_ip = "get_container_ip.cli:app"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+argparse = "^1.4.0"
+logging = "0.4.9.6"
