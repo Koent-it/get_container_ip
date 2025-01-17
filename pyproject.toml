@@ -1,9 +1,42 @@
-[tool.poetry]
-name = "get_container_ip"
-version = "0.1.0"
-description = "A project to get the IP address of a container"
-authors = ["Koent S.r.l. <tools@koent.it>"]
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = 'get_container_ip'
+dependencies = [
+    "argparse>=1.4.0",
+    "logging>=0.4.9.6"
+]
+requires-python = ">=3.6"
+authors = [
+    {name = "Koent S.r.l.", email = "tools@koent.it"},
+]
+maintainers = [
+    {name = "Koent S.r.l.", email = "tools@koent.it"},
+]
+description = "A package to obtain the IP address of a running docker container."
+readme = {file = "README.txt", content-type = "text/markdown"}
 license = "MIT"
+license-files = ["LICEN[CS]E.*",]
+keywords = ["docker", "ip", "container", "network", "address", "utility", "tool", "automation", "ip address"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: MIT License",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Build Tools",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+]
+dynamic = ["version"]
+
+
+[project.urls]
+Homepage = "https://github.com/Koent-it/get_container_ip"
+Documentation = "https://github.com/Koent-it/get_container_ip"
+Repository = "https://github.com/Koent-it/get_container_ip"
+Issues = "https://github.com/Koent-it/get_container_ip/issues"
+Changelog = "https://github.com/Koent-it/get_container_ip"
 
 [project.scripts]
 get_container_ip = "get_container_ip.cli:app"
@@ -11,17 +44,5 @@ get_container_ip = "get_container_ip.cli:app"
 [project.entry-points."pipx.run"]
 get_container_ip = "get_container_ip.cli:app"
 
-[tool.poetry.dependencies]
-python = "^3.8"
-
-[tool.poetry.dev-dependencies]
-pytest = "^6.2.4"
-
-[build-system]
-requires = ["poetry-core>=1.0.0"]
-build-backend = "poetry.core.masonry.api"
-
-[tool.poetry.dependencies]
-python = "^3.6"
-argparse = "^1.4.0"
-logging = "0.4.9.6"
+[tool.setuptools.dynamic]
+version = {attr = "get_container_ip.__version__"}
