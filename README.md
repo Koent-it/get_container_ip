@@ -1,5 +1,13 @@
-# FILE: get_container_ip/README.md
-# Questo file contiene la documentazione del progetto.
+# GET_CONTAINER_IP
+
+[![Alert](https://sonar.koentlab.com/api/project_badges/measure?project=Koent-it_get_container_ip_AZR0w1AuWa--ZuEf7b-8&metric=alert_status&token=sqb_89be40e01f509075033f14a7ab9300a056c3bade)](https://sonar.koentlab.com/dashboard?id=Koent-it_get_container_ip_AZR0w1AuWa--ZuEf7b-8) [![Maintainability Rating](https://sonar.koentlab.com/api/project_badges/measure?project=Koent-it_get_container_ip_AZR0w1AuWa--ZuEf7b-8&metric=sqale_rating&token=sqb_89be40e01f509075033f14a7ab9300a056c3bade)](https://sonar.koentlab.com/dashboard?id=Koent-it_get_container_ip_AZR0w1AuWa--ZuEf7b-8) [![Alert](https://sonar.koentlab.com/api/project_badges/measure?project=Koent-it_get_container_ip_AZR0w1AuWa--ZuEf7b-8&metric=alert_status&token=sqb_89be40e01f509075033f14a7ab9300a056c3bade)](https://sonar.koentlab.com/dashboard?id=Koent-it_get_container_ip_AZR0w1AuWa--ZuEf7b-8)
+
+#
+
+# A simple library and CLI command that provides the IP address of any running docker container.
+
+## TIPICAL USE CASE
+You run on a test server some applications that connects to a db that is dockerized. everytime you run the container, you must inspect it to get the IP address and update the connection parameter.
 
 # get_container_ip
 
