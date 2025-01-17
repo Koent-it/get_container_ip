@@ -1,4 +1,4 @@
 # FILE: get_container_ip/get_container_ip/__init__.py
-# This file is intentionally left blank.
+__version__ = "0.2.0"
 
-#from .get_ip import get_container_ip
+from .get_ip import get_container_ip
